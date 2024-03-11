@@ -76,7 +76,7 @@ function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-                <button type="submit" className="btn btn-primary w-100">
+                <button type="submit" className="btn btn-primary w-100" onClick={() => navigate("/landingpage")}>
                   Login
                 </button>
               </form>
