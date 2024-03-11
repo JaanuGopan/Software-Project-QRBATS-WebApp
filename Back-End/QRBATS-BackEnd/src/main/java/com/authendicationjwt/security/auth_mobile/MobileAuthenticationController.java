@@ -1,6 +1,5 @@
 package com.authendicationjwt.security.auth_mobile;
 
-
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,17 +14,15 @@ public class MobileAuthenticationController {
 
     @PostMapping("/mobileregister")
     public ResponseEntity<MobileAuthenticationResponse> register(
-             @RequestBody MobileRegisterRequest request
+            @RequestBody MobileRegisterRequest request
     ){
         return ResponseEntity.ok(service.register(request));
     }
 
-    @PostMapping("/mobileauthendicate")
-    public ResponseEntity<MobileAuthenticationResponse> register(
+    @PostMapping("/mobileauthenticate")
+    public ResponseEntity<MobileAuthenticationResponse> authenticate(
             @RequestBody MobileAuthenticationRequest request
     ){
         return ResponseEntity.ok(service.authenticate(request));
     }
-
-
 }
