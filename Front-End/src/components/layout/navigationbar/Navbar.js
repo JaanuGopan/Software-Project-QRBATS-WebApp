@@ -16,11 +16,11 @@ export default function Navbar() {
           </a>
 
           <div>
-            <button className="btn2" onClick={() => navigate("/login")}>
+            <button className="btn2" onClick={() => navigate("/signin")}>
               <span>SignIn</span>
               <i></i>
             </button>
-            <button className="btn2" onClick={() => navigate("/signup")}>
+            <button className="btn2" onClick={() => navigate("/signupc")}>
               <span>SignUp</span>
               <i></i>
             </button>
